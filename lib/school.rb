@@ -24,7 +24,8 @@ class School
   
   def sort
     @roster.each do |grade, student|
-      student
+      student.sort do |a, b|
+        if a <=> b
     end
   end
   
